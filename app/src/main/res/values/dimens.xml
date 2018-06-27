@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sale_button_dimen">45dp</dimen>
+    <dimen name="picture_dimen">250dp</dimen>
+    <dimen name="padding">12dp</dimen>
+</resources>
