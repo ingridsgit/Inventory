@@ -18,14 +18,14 @@
             android:layout_marginLeft="@dimen/padding"
             android:layout_marginRight="@dimen/padding"
             android:hint="@string/product_name"
-            android:inputType="text"/>
+            android:inputType="text" />
 
         <ImageView
             android:id="@+id/picture_view"
             android:layout_width="match_parent"
             android:layout_height="@dimen/picture_dimen"
             android:contentDescription="@string/product_preview"
-            android:scaleType="centerInside"/>
+            android:scaleType="centerInside" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:layout_weight="1"
                 android:hint="@string/price_hint"
                 android:inputType="numberDecimal"
-                android:maxLines="1"/>
+                android:maxLines="1" />
 
             <View
                 android:layout_width="0dp"
@@ -58,8 +58,11 @@
 
             <Button
                 android:id="@+id/download_picture_button"
+                style="@style/buttonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/sale_button_dimen"
+                android:paddingEnd="@dimen/padding"
+                android:paddingStart="@dimen/padding"
                 android:text="@string/browse" />
 
         </LinearLayout>
@@ -85,10 +88,11 @@
                 android:layout_weight="2"
                 android:hint="@string/quantity_hint"
                 android:inputType="number"
-                android:maxLines="1"/>
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/decrease_button"
+                style="@style/buttonStyle"
                 android:layout_width="@dimen/sale_button_dimen"
                 android:layout_height="@dimen/sale_button_dimen"
                 android:text="-" />
@@ -96,14 +100,16 @@
             <EditText
                 android:id="@+id/enter_amount_field"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/sale_button_dimen"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/change_quantity_hint"
                 android:inputType="number"
-                android:maxLines="1"/>
+                android:maxLines="1"
+                android:textAlignment="center" />
 
             <Button
                 android:id="@+id/increase_button"
+                style="@style/buttonStyle"
                 android:layout_width="@dimen/sale_button_dimen"
                 android:layout_height="@dimen/sale_button_dimen"
                 android:text="+" />
@@ -136,9 +142,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="@dimen/padding"
-            android:paddingRight="@dimen/padding"
-            android:paddingTop="@dimen/padding">
+            android:padding="@dimen/padding">
 
             <TextView
                 style="@style/subheading"
@@ -166,7 +170,7 @@
                 android:id="@+id/edit_supplier_button"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/sale_button_dimen"
+                android:layout_height="wrap_content"
                 android:text="@string/edit_supplier"
                 app:layout_constraintEnd_toStartOf="@+id/add_a_supplier_button"
                 app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +181,7 @@
                 android:id="@+id/add_a_supplier_button"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/sale_button_dimen"
+                android:layout_height="wrap_content"
                 android:text="@string/action_add_supplier"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/order_button"

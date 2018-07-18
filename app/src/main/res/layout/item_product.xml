@@ -38,7 +38,8 @@
         android:id="@+id/sale_button"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/sale_button_dimen"
-        android:layout_gravity="center_vertical" />
+        android:layout_gravity="center_vertical"
+        style="@style/buttonStyle"/>
 
 
 </LinearLayout>
